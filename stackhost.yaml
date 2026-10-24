@@ -2,14 +2,14 @@
 # Version: 2.0.0
 
 user:
-  name: "你的GitHub用户名"
-  github: "你的GitHub用户名"
+  name: "ni4640756-pixel"
+  github: "ni4640756-pixel"
 
 runtime:
   image: python:3.11-slim
 
 commands:
-  package: "curl openssl bash"
+  package: "openssl bash"
   build:
     - pip install --no-cache-dir -r requirements.txt
   start: python3 app.py
