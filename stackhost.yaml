@@ -9,9 +9,10 @@ runtime:
   image: python:3.12-alpine
 
 commands:
+  package: ""
   build:
-     pip install -r requirements.txt
-  start: python3 app.py
+    - "pip install -r requirements.txt"
+  start: "python3 app.py"
 
 repository:
   branch: main
