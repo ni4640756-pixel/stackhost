@@ -9,7 +9,6 @@ runtime:
   image: python:3.11-slim
 
 commands:
-  package: "openssl bash"
   build:
     - pip install --no-cache-dir -r requirements.txt
   start: python3 app.py
