@@ -6,7 +6,7 @@ user:
   github: "ni4640756-pixel"
 
 runtime:
-  image: python:3.11-slim
+  image: python:3.12-alpine
 
 commands:
   build:
