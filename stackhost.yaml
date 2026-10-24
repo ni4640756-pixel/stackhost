@@ -1,24 +1,21 @@
-```yaml
 # StackHost configuration file
 # Version: 2.0.0
 
 user:
-  name: string
-  github: string
+  name: "你的GitHub用户名"
+  github: "你的GitHub用户名"
 
 runtime:
-  image: node:22
+  image: python:3.11-slim
 
 commands:
-  package: ""
+  package: "curl openssl bash"
   build:
-    - npm install
-  start: node index.js
+    - pip install --no-cache-dir -r requirements.txt
+  start: python3 app.py
 
 repository:
   branch: main
   auto_deploy: true
 
-env:
-  - NODE_ENV:production
-```
+env: []
